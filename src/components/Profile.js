@@ -1,5 +1,6 @@
 import React from 'react';
 import './styles/Profile.css';
+import RecentItem from './RecentItem'
 
 const Profile = () => {
   return (
@@ -28,6 +29,27 @@ const Profile = () => {
           <i className='fas fa-arrow-up'></i>
         </h2>
         <h2>Chat</h2>
+      </div>
+      <div className='profile__recent'>
+        <h2>Recent broadcasts</h2>
+        <div className='profile__recentItems'>
+          <RecentItem
+            url={'https://www.youtube.com/embed/WY5MQtAym5w'}
+            title={"🔴 Let's Setup The End Of Program"}
+          />
+          <RecentItem
+            url={'https://www.youtube.com/embed/TEIf-OW_PZw'}
+            title={"🔴 Let's Build A Social Network!! Team Project!"}
+          />
+          <RecentItem
+            url={'https://www.youtube.com/embed/s2s9SaCLYHk'}
+            title={'🔴Teamwork Makes The Dream Work! Team Project!'}
+          />
+          <RecentItem
+            url={'https://www.youtube.com/embed/x3-O-Ond9AI'}
+            title={'🔴 A Short Class On Getting A Job'}
+          />
+        </div>
       </div>
     </div>
   );
